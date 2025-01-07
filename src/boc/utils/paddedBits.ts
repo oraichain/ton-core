@@ -25,7 +25,7 @@ export function bitsToPaddedBuffer(bits: BitString) {
         }
     }
 
-    return builder.buffer();
+    return Buffer.from(builder.buffer());
 }
 export function paddedBufferToBits(buff: Buffer) {
     let bitLen = 0;
